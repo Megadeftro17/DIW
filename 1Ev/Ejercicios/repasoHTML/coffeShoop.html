@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!-- Etiqueta raíz del documento HTML, definiendo el idioma en español -->
+<html lang="es">
+<!-- Cabecera del documento -->
+<head>
+    <!-- Codificación de caracteres para admitir tildes y 'ñ' -->
+    <meta charset="UTF-8">
+    <!-- Título de la página -->
+    <title>Tienda de Café de Especialidad</title>
+</head>
+<!-- Cuerpo del documento-->
+<body>
+
+    <!-- Encabezado de la página web -->
+    <header>
+        <!-- Título de la tienda -->
+        <h1>Café de Especialidad</h1>
+        <!-- Párrafo eslogan o descripción breve -->
+        <p>El mejor café en grano, tostado artesanalmente para despertar tus sentidos.</p>
+    </header>
+
+    <!-- Sección del catálogo de productos -->
+    <section>
+        <!-- Título secundario para la sección de productos -->
+        <h2>Nuestros Productos</h2>
+
+        <hr>
+        <!-- Contenedor para el primer producto de café -->
+        <article>
+            <!-- Nombre del primer café -->
+            <h3>Café de Colombia Supremo</h3>
+            <!-- Imagen representativa del producto con texto alternativo para accesibilidad -->
+            <img src="https://media.istockphoto.com/id/1467739359/es/foto/taza-de-caf%C3%A9-con-humo-y-granos-de-caf%C3%A9-sobre-fondo-de-madera-viejo.webp?a=1&b=1&s=612x612&w=0&k=20&c=tYSGoliCk0tptwJB9H9u5CnJm-11zvB197VbjN4PTIA=" alt="Saco de café en grano de origen Colombia">
+            <!-- Párrafo con descripción detallada del producto -->
+            <p>Un café de cuerpo medio con notas dulces a caramelo y un ligero toque afrutado, ideal para filtrado.</p>
+            <!-- Etiqueta para el precio del producto -->
+            <strong>Precio: 12,50 €</strong>
+            <!-- Salto de línea para separar el precio del enlace -->
+            <br>
+            <!-- Enlace para realizar la compra -->
+            <a href="/comprar/colombia">Comprar este café</a>
+        </article>
+
+        <!-- Separación entre articulos -->
+        <hr>
+        <!-- Contenedor para el segundo producto de café -->
+        <article>
+            <!-- Nombre del segundo café -->
+            <h3>Café de Etiopía Yirgacheffe</h3>
+            <!-- Imagen representativa del producto con texto alternativo -->
+            <img src="https://images.unsplash.com/photo-1589830802010-c2c25d784842?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y29mZmV8ZW58MHx8MHx8fDA%3D" alt="Taza de café humeante de origen Etiopía">
+            <!-- Párrafo con descripción detallada del producto -->
+            <p>Conocido por su acidez brillante, cuerpo ligero y sus inconfundibles aromas florales y cítricos.</p>
+            <!-- Etiqueta para el precio del producto -->
+            <strong>Precio: 14,00 €</strong>
+            <!-- Salto de línea -->
+            <br>
+            <!-- Enlace para realizar la compra -->
+            <a href="/comprar/etiopia">Comprar este café</a>
+        </article>
+
+        <!-- Separación entre articulos -->
+        <hr>
+        <!-- Contenedor para el tercer producto de café -->
+        <article>
+            <!-- Nombre del tercer café -->
+            <h3>Café de Brasil Cerrado</h3>
+            <!-- Imagen representativa del producto con texto alternativo -->
+            <img src="https://images.unsplash.com/photo-1551610290-e153ec567dd8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29mZmV8ZW58MHx8MHx8fDA%3D ">
+            <!-- Párrafo con la descripción detallada del producto -->
+            <p>Café denso y cremoso, perfecto para espresso, destacando sus notas a chocolate negro y nueces.</p>
+            <!-- Etiqueta para el precio del producto -->
+            <strong>Precio: 11,20 €</strong>
+            <!-- Salto de línea -->
+            <br>
+            <!-- Enlace para realizar la compra -->
+            <a href="/comprar/brasil">Comprar este café</a>
+        
+    </section>
+
+    <!-- Separación del formulario y los artículos -->
+    <hr>    
+    <!-- Sección dedicada al formulario de contacto -->
+    <section>
+        <!-- Título secundario para la sección de contacto -->
+        <h2>Formulario de Contacto</h2>
+        <!-- Formulario que enviará los datos introducidos por el usuario -->
+        <form action="/enviar_contacto" method="POST">
+            <!-- Etiqueta descriptiva para el campo del nombre -->
+            <label for="nombre">Nombre del cliente:</label>
+            <!-- Campo de entrada de texto para el nombre, marcado como obligatorio -->
+            <input type="text" id="nombre" name="nombre" required>
+            <!-- Salto de línea para estructurar visualmente el formulario -->
+            <br><br>
+
+            <!-- Etiqueta descriptiva para el campo del correo electrónico -->
+            <label for="email">Correo electrónico:</label>
+            <!-- Campo de entrada específico para email, marcado como obligatorio -->
+            <input type="email" id="email" name="email" required>
+            <!-- Salto de línea para estructurar visualmente el formulario -->
+            <br><br>
+
+            <!-- Etiqueta descriptiva para el área del mensaje -->
+            <label for="mensaje">Mensaje:</label>
+            <!-- Salto de línea para colocar el área de texto debajo de su etiqueta -->
+            <br>
+            <!-- Área de texto multilínea para que el cliente escriba su consulta -->
+            <textarea id="mensaje" name="mensaje" rows="5" cols="40" required></textarea>
+            <!-- Salto de línea antes del botón -->
+            <br><br>
+
+            <!-- Botón de acción para enviar los datos del formulario -->
+            <button type="submit">Enviar mensaje</button>
+        </form>
+    </section>
+
+    <!-- Pie de página con información corporativa y legal -->
+    <footer>
+        <!-- Párrafo que contiene el mensaje de derechos de autor -->
+        <p>&copy; 2026 Café de Especialidad. Todos los derechos reservados.</p>
+        <!-- Etiqueta semántica para incluir la dirección física o datos de contacto de la empresa -->
+        <address>
+            Visítanos en: Miguel Servet, 123, Local 4, 28001 Zaragoza, España.
+        </address>
+    </footer>
+
+</body>
+</html>
