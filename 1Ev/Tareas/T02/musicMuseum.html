@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUSONIC - Museo de la Música y el Sonido</title>
+</head>
+<body>
+
+    <!-- CABECERA: Logo y Navegación principal -->
+    <header>
+        <div>
+            <h1>MUSONIC</h1>
+            <p><em>Museo Internacional de la Música y el Sonido</em></p>
+        </div>
+        <hr>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#exposiciones">Exposiciones</a></li>
+                <li><a href="#colecciones">Colecciones Destacadas</a></li>
+                <li><a href="#informacion">Horarios y Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <!-- BLOQUE PRINCIPAL -->
+    <section id="inicio">
+        <div>
+            <h2>Exposición Destacada: La Revolución del Sintetizador</h2>
+            <img src="https://picsum.photos/200" alt="Sintetizador analógico vintage" width="600">
+            <p>Un recorrido sonoro por los instrumentos electrónicos que cambiaron la historia de la música moderna desde los años 60.</p>
+            <p><strong>Muestra sonora de la exposición:</strong></p>
+            <audio controls>
+                <source src="assets/demo_sintetizador.mp3" type="audio/mpeg">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+        </div>
+    </section>
+
+    <hr>
+
+    <!-- SECCIÓN DE EXPOSICIONES (ORGANIZADA EN CAPAS Y ARTÍCULOS) -->
+    <main>
+        <section id="exposiciones">
+            <h2>Exposiciones en Galería</h2>
+
+            <!-- Exposición 1 -->
+            <article>
+                <h3>1. Sintetizadores e Innovación Electrónica</h3>
+                <img src="https://picsum.photos/200/300?random=1" alt="Moog Modular" width="200">
+                <p><strong>Tipo:</strong> Exposición Temporal</p>
+                <p>Explora equipos originales de Moog, Roland y Korg que definieron la música electrónica.</p>
+                <details>
+                    <summary>Ver piezas destacadas y audios</summary>
+                    <ul>
+                        <li>Moog Modular Synth (1968)</li>
+                        <li>Minimoog Model D (1970)</li>
+                        <li>Roland TR-808 (1980)</li>
+                    </ul>
+                </details>
+                <br>
+                <a href="#contacto">Reservar entrada para esta exposición</a>
+            </article>
+
+            <br>
+
+            <!-- Exposición 2 -->
+            <article>
+                <h3>2. Orígenes del Jazz y el Blues</h3>
+                <img src="https://picsum.photos/200/300?random=2" alt="Saxofón de época" width="200">
+                <p><strong>Tipo:</strong> Exposición Permanente</p>
+                <p>Instrumentos originales de los pioneros del sonido de Nueva Orleans y el delta del Misisipi.</p>
+                <details>
+                    <summary>Ver piezas destacadas</summary>
+                    <ul>
+                        <li>Saxofón Selmer Model 22 (1922)</li>
+                        <li>Guitarra Resonadora National (1930)</li>
+                    </ul>
+                </details>
+                <br>
+                <a href="#contacto">Más información sobre la colección</a>
+            </article>
+
+            <br>
+
+            <!-- Exposición 3 -->
+            <article>
+                <h3>3. Acústica y la Física del Sonido</h3>
+                <img src="https://picsum.photos/200/300?random=3" alt="Laboratorio de ondas sonoras" width="200">
+                <p><strong>Tipo:</strong> Exposición Permanente e Interactiva</p>
+                <p>Laboratorio sonoro interactivo donde experimentar con ondas, frecuencias y resonancia.</p>
+            </article>
+        </section>
+    </main>
+
+    <hr>
+
+    <!-- FOOTER (TABLA) -->
+    <footer id="informacion">
+        <h2>Información Práctica del Museo</h2>
+        
+        <!-- Tabla para estructurar horarios y accesos -->
+        <table border="1" cellpadding="10" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Dirección y Contacto</th>
+                    <th>Horarios de Visita</th>
+                    <th>Tarifas</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>Calle de la Melodía, 42</p>
+                        <p>28001 Madrid</p>
+                        <p>Email: info@musonicmuseo.es</p>
+                    </td>
+                    <td>
+                        <p><strong>Lunes a Viernes:</strong> 10:00 - 20:00</p>
+                        <p><strong>Fines de semana:</strong> 10:00 - 22:00</p>
+                    </td>
+                    <td>
+                        <p>General: 10€</p>
+                        <p>Reducida (Estudiantes/Senior): 6€</p>
+                        <p>Menores de 12 años: Gratis</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br>
+        <p>&copy; 2026 MUSONIC Museo de la Música - Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
