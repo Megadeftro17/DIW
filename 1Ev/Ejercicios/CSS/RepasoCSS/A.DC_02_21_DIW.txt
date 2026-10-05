@@ -1,0 +1,9 @@
+Ejercicio1 (ej01.html):
+    1. ¿En que año se creó css y quien es su creador?
+        - CSS fue propuesto por primera vez en 1994 por Håkon Wium Lie, mientras trabajaba junto a Tim Berners-Lee en el CERN.
+    2. ¿Por qué surgió la necesidad de separar el html del diseño css?
+        - La necesidad de separar HTML del diseño con CSS surgió en los años 90 porque el código HTML se volvió demasiado complejo y difícil de mantener al intentar controlar la apariencia visual de las páginas.
+    3. ¿Qué mejoras trajo consigo css3 respecto a versiones anteriores?
+        - CSS3 introdujo cambios revolucionarios que transformaron el diseño web, permitiendo crear interfaces dinámicas y visualmente complejas sin depender de imágenes pesadas o scripts de JavaScript.
+    4. ¿Qué ventajas ofrece css3 para diseñar interfaces modernas?
+        - herramientas potentes que permiten crear interfaces rápidas, adaptables y visualmente atractivas sin depender de imágenes pesadas o código JavaScript.

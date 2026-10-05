@@ -1,0 +1,36 @@
+/* Estilos para el contenedor principal */
+div {
+    background-color: #ecf0f1;
+    border: 2px solid #bdc3c7;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    font-family: sans-serif;
+}
+
+/* Estilos para la lista desordenada */
+ul {
+    color: #27ae60;
+    list-style-type: square;
+    margin-bottom: 25px;
+    line-height: 1.8;
+}
+
+/* Estilos para el enlace simulando un botón */
+a {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+/* Efecto al pasar el ratón por encima del enlace */
+a:hover {
+    background-color: #2980b9;
+}
