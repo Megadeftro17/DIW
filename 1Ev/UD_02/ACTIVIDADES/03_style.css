@@ -1,0 +1,33 @@
+/* ================= EJERCICIO 1 ================= */
+p {
+    color: blue;
+}
+
+.texto {
+    color: green;
+}
+
+#parrafo1 {
+    color: red;
+}
+
+/* ================= EJERCICIO 2 ================= */
+.contenedor-ej2 {
+    color: purple;
+    font-family: Arial, sans-serif;
+    border: 2px solid black;
+}
+
+/* ================= EJERCICIO 3 ================= */
+/* Nota: Esta regla 'h2' afectará también a los encabezados de los otros ejercicios en el documento, mostrándolos en azul. */
+h2 {
+    color: blue;
+}
+
+.titulo {
+    color: orange;
+}
+
+h2.titulo{
+    color: green !important;
+}

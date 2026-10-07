@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="03_style.css">
+</head>
+<body>
+    <!-- ================================== EJERCICIO 1 ================================== -->
+    <!-- COMENTARIO EJERCICIO 1:
+    El estilo que se ha aplicado finalmente es el color rojo. Esto se debe a las reglas de especificidad en CSS. 
+    El selector de ID (#parrafo1) tiene un peso mucho mayor que el selector de clase (.texto) y que el selector de etiqueta (p), por lo que el navegador prioriza el estilo definido para el ID. 
+    -->
+    <h2>Ejercicio 1</h2>
+    <p id="parrafo1" class="texto">Parrafo con clase e ID</p>
+
+    <!-- ================================== EJERCICIO 2 ================================== -->
+    <!-- COMENTARIO EJERCICIO 2:
+    Propiedades heredadas: El 'color' y la fuente ('font-family') se aplican a los elementos hijos (<h1>, <p>, <span>). 
+    Propiedades NO heredadas: El borde ('border') solo aparece en el <div> principal y no rodea a cada hijo individualmente.
+    Justificación: Por defecto, CSS hereda las propiedades relacionadas con la tipografía para mantener la coherencia visual del texto a lo largo de todo el contenedor. Sin embargo, las propiedades de modelo de caja (como bordes, márgenes y paddings) no se heredan, ya que de hacerlo se rompería completamente la estructura visual (cada palabra o bloque dentro del contenedor dibujaría su propio marco).
+    -->
+    <div class="contenedor_ej02">
+        <h1>Titulo ejercicio 2</h1>
+        <p>
+            Parrafo que contiene luego un span
+            <span>"Texto del span"</span>
+        </p>
+    </div>
+
+    <!-- ================================== EJERCICIO 3 ================================== -->
+    <h2 class="titulo">Titulo ejercicio 3</h2>
+    <!-- ================================== EJERCICIO 4 ================================== -->
+    <div>
+        <p>
+            <span></span>
+        </p>
+    </div>
+    <!-- ================================== EJERCICIO 5 ================================== -->
+</body>
+</html>
