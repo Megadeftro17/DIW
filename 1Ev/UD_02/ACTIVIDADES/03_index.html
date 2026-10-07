@@ -30,13 +30,47 @@
     </div>
 
     <!-- ================================== EJERCICIO 3 ================================== -->
-    <h2 class="titulo">Titulo ejercicio 3</h2>
+    <section class="ejercicio-3">
+        <h2 class="titulo-demo-sin">Sin !important</h2>
+        <p class="texto-demo">Este párrafo usa la regla de clase y se ve naranja.</p>
+
+        <h2 class="titulo-demo-con">Con !important</h2>
+        <p class="texto-demo-importante">Este párrafo usa la misma idea, pero con !important y se ve verde.</p>
+
+        <div class="bloque-cascada">
+            <p>p normal</p>
+            <p class="clase-p">p con clase</p>
+            <p id="id-p">p con ID</p>
+            <span class="clase-span">span con clase</span>
+        </div>
+    </section>
+    <!--
+        COMENTARIO EJERCICIO 3:
+        En la primera línea, la regla .titulo-demo-sin hace que el texto sea naranja. Cuando se quita !important,
+        la regla más específica o más reciente gana sobre la más general. En la segunda prueba, la regla h2.titulo-demo-con
+        usa !important y obliga al navegador a aplicar el color verde, aunque existan otras reglas que podrían competir.
+        Esto se ve claramente cuando hay varios elementos <p> y <span> con distintos selectores.
+    -->
+
     <!-- ================================== EJERCICIO 4 ================================== -->
-    <div>
-        <p>
-            <span></span>
-        </p>
-    </div>
+    <section class="ejercicio-4">
+        <div class="contenedor_ej04">
+            <p>
+                Texto del párrafo con un <span class="span-heredado">span heredado</span> dentro.
+            </p>
+            <p>
+                Otro <span class="span-rojo">span con color propio</span> para comparar.
+            </p>
+        </div>
+    </section>
+    <!--
+        COMENTARIO EJERCICIO 4:
+        La propiedad 'inherit' obliga a un elemento a tomar el valor del padre directamente. En este caso,
+        el primer <span> hereda el color del <div> aunque no haya un color específico en ese span.
+        El segundo <span> tiene su propio color, por eso se ve distinto. Si cambiamos el color del <div>,
+        el span heredado también cambia, lo cual demuestra que la herencia está funcionando explícitamente.
+    -->
+
     <!-- ================================== EJERCICIO 5 ================================== -->
 </body>
 </html>

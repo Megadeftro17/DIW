@@ -12,22 +12,72 @@ p {
 }
 
 /* ================= EJERCICIO 2 ================= */
-.contenedor-ej2 {
+.contenedor_ej02 {
     color: purple;
     font-family: Arial, sans-serif;
     border: 2px solid black;
 }
 
 /* ================= EJERCICIO 3 ================= */
-/* Nota: Esta regla 'h2' afectará también a los encabezados de los otros ejercicios en el documento, mostrándolos en azul. */
-h2 {
+.ejercicio-3 {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    background: #f9f9f9;
+}
+
+.ejercicio-3 h2 {
     color: blue;
 }
 
-.titulo {
+.titulo-demo-sin {
     color: orange;
 }
 
-h2.titulo{
+h2.titulo-demo-con {
     color: green !important;
+}
+
+.bloque-cascada {
+    margin-top: 15px;
+    padding: 10px;
+    border: 1px dashed #999;
+}
+
+.bloque-cascada p {
+    color: black;
+}
+
+.bloque-cascada .clase-p {
+    color: purple;
+}
+
+.bloque-cascada #id-p {
+    color: red;
+}
+
+.bloque-cascada .clase-span {
+    color: orange;
+}
+
+/* ================= EJERCICIO 4 ================= */
+.ejercicio-4 {
+    margin-top: 20px;
+}
+
+.contenedor_ej04 {
+    color: #333;
+    border: 1px solid #999;
+    padding: 10px;
+    background: #f0f0f0;
+}
+
+.span-heredado {
+    color: inherit;
+    font-weight: bold;
+}
+
+.span-rojo {
+    color: red;
+    font-weight: bold;
 }
