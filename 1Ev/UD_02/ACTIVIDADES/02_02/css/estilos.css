@@ -1,0 +1,160 @@
+/* ==========================================================================
+    TIPOGRAFÍA Y ESTILOS GENERALES (Ejercicio 3)
+   ========================================================================== */
+
+/* Establece la fuente principal, margen base y color de fondo de la web */
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Tipografía sans-serif legible */
+    background-color: #f4f6f8; /* Fondo gris claro */
+    color: #2c3e50; /* Color de texto oscuro para buen contraste */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Encabezado principal y navegación */
+header {
+    background-color: #1b365d; /* Fondo azul oscuro corporativo */
+    color: #ffffff; /* Texto en blanco */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Contenedor principal de contenidos */
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* Pie de página */
+footer {
+    background-color: #1b365d;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 40px;
+}
+
+/* ==========================================================================
+    REDEFINICIÓN DE ETIQUETAS (Ejercicio 5 y 6)
+   ========================================================================== */
+
+/* Redefinición de títulos h1 a h3 */
+h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #1b365d;
+    border-bottom: 2px solid #27ae60; /* Subrayado decorativo */
+    padding-bottom: 5px;
+}
+
+h3 {
+    font-size: 1.4rem;
+    color: #2c3e50;
+}
+
+/* Redefinición de párrafos */
+p {
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+/* Redefinición de enlaces */
+a {
+    color: #27ae60; /* Verde accesible */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline; /* Subrayado al pasar el ratón */
+}
+
+/* Redefinición de listas dentro de la navegación */
+nav ul {
+    list-style: none; /* Elimina los puntos por defecto */
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: #ffffff; /* Enlaces blancos en el nav */
+}
+
+/* Redefinición de formularios */
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Evita que el padding sobrepase el ancho */
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+/* ==========================================================================
+    CLASES REUTILIZABLES (Ejercicio 7)
+   ========================================================================== */
+
+/* 1. Bloque destacado */
+.destacado {
+    background-color: #e8f8f5;
+    border-left: 5px solid #27ae60;
+    padding: 15px;
+    margin: 15px 0;
+}
+
+/* 2. Tarjeta para mostrar productos */
+.tarjeta-producto {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* 3. Botón estilizado para compra o envío de formularios */
+.boton-compra {
+    background-color: #27ae60;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.boton-compra:hover {
+    background-color: #219150;
+}
+
+/* 4. Estilo de aviso para errores de formulario */
+.error-formulario {
+    color: #e74c3c;
+    font-size: 0.85rem;
+    margin-top: 5px;
+}
+
+/* 5. Utilidad para centrar texto */
+.centrado {
+    text-align: center;
+}
