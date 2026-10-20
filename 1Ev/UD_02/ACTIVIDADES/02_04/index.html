@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 02_04 | Selectores y pseudoelementos</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header class="cabecera">
+        <p class="eyebrow">Desarrollo de interfaces web</p>
+        <h1>Selectores y pseudoelementos</h1>
+        <p>Solución de la actividad 02_04</p>
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li><a href="#listas">Listas</a></li>
+                <li><a href="#titulos">Títulos</a></li>
+                <li><a href="#navegacion">Navegación</a></li>
+                <li><a href="#unidades">Unidades</a></li>
+                <li><a href="#formulario">Formulario</a></li>
+                <li><a href="#productos">Productos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="listas" class="panel">
+            <p class="numero-ejercicio">Ejercicio 1</p>
+            <h2>Listas y pseudoclases</h2>
+            <p>El primer elemento de cada lista tiene un color distinto y las posiciones impares aparecen en cursiva.</p>
+            <div class="columnas-listas">
+                <section>
+                    <h3>Frutas</h3>
+                    <ul>
+                        <li>Manzana</li>
+                        <li>Pera</li>
+                        <li>Naranja</li>
+                        <li>Uva</li>
+                        <li>Melocotón</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Colores</h3>
+                    <ul>
+                        <li>Azul</li>
+                        <li>Verde</li>
+                        <li>Rojo</li>
+                        <li>Amarillo</li>
+                        <li>Violeta</li>
+                    </ul>
+                </section>
+            </div>
+        </section>
+
+        <section id="titulos" class="panel">
+            <p class="numero-ejercicio">Ejercicio 2</p>
+            <h2>Títulos con líneas decorativas</h2>
+            <p>Las líneas se generan con <code>::before</code> y <code>::after</code>, sin añadir elementos vacíos al HTML.</p>
+            <div class="muestras-titulos">
+                <h3>Diseño sencillo</h3>
+                <h3>Contenido y estilo</h3>
+                <h3>Interfaz web</h3>
+            </div>
+        </section>
+
+        <section id="navegacion" class="panel">
+            <p class="numero-ejercicio">Ejercicio 3</p>
+            <h2>Efecto hover en la navegación</h2>
+            <p>Pasa el ratón por los enlaces del menú superior. El enlace de ejemplo de abajo queda fuera del menú y no recibe ese efecto.</p>
+            <p class="enlace-externo"><a href="#formulario">Enlace fuera de la navegación</a></p>
+        </section>
+
+        <section id="unidades" class="panel">
+            <p class="numero-ejercicio">Ejercicio 4</p>
+            <h2>Unidades absolutas y relativas</h2>
+            <p>Compara el bloque fijo (en píxeles) con el bloque fluido (en porcentajes y unidades relativas). Reduce el ancho de la ventana para observar la diferencia.</p>
+            <div class="comparacion-unidades">
+                <article class="bloque-absoluto">
+                    <h3>Unidades absolutas</h3>
+                    <p>Ancho: 320 px</p>
+                    <p>Texto: 16 px</p>
+                </article>
+                <article class="bloque-relativo">
+                    <h3>Unidades relativas</h3>
+                    <p>Ancho: 100 % del espacio disponible</p>
+                    <p>Texto: 1 rem</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="formulario" class="panel">
+            <p class="numero-ejercicio">Ejercicio 5</p>
+            <h2>Estilos con selectores de atributo</h2>
+            <p>El fondo gris y los bordes redondeados se aplican únicamente a los campos de correo y contraseña.</p>
+            <form class="formulario">
+                <label for="nombre">Nombre (type="text")</label>
+                <input id="nombre" name="nombre" type="text" placeholder="Tu nombre">
+
+                <label for="correo">Correo (type="email")</label>
+                <input id="correo" name="correo" type="email" placeholder="nombre@ejemplo.com">
+
+                <label for="contrasena">Contraseña (type="password")</label>
+                <input id="contrasena" name="contrasena" type="password" placeholder="Escribe una contraseña">
+            </form>
+        </section>
+
+        <section id="productos" class="panel">
+            <p class="numero-ejercicio">Ejercicio 6</p>
+            <h2>Insignia creada con ::after</h2>
+            <p>La etiqueta «Novedad» se inserta desde CSS únicamente en el producto con la clase <code>nuevo</code>.</p>
+            <div class="productos">
+                <article class="producto nuevo">
+                    <img src="img/novedad.jpg" alt="Ilustración de una zapatilla deportiva roja">
+                    <h3>Zapatilla Urban</h3>
+                    <p>Diseño ligero para el día a día.</p>
+                </article>
+                <article class="producto">
+                    <img src="img/noNovedad.jpg" alt="Ilustración de una zapatilla deportiva roja">
+                    <h3>Zapatilla Classic</h3>
+                    <p>Un modelo cómodo y atemporal.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Actividad 02_04 · Selectores y pseudoelementos CSS</p>
+    </footer>
+</body>
+</html>
