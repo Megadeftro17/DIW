@@ -81,7 +81,7 @@ nav ul a:hover {
 }
 
 /* ::after añade el texto sin escribirlo en el HTML.
-   position: absolute y top/right sitúan la etiqueta sobre la imagen.
+    position: absolute y top/right sitúan la etiqueta sobre la imagen.
    El fondo y el color hacen que se lea como una insignia. */
 .producto.nuevo::after {
     content: "Novedad";
