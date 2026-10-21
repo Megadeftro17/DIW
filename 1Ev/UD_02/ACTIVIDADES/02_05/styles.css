@@ -1,0 +1,166 @@
+/* Incluye el relleno y el borde dentro del ancho y la altura indicados. */
+* {
+    box-sizing: border-box;
+}
+
+/* Estilos básicos para distinguir las secciones y mostrar los ejemplos. */
+body {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+/* EJERCICIO 1: position no se establece; los elementos siguen el flujo normal. */
+.estatico {
+    width: 100%;
+    min-height: 180px;
+    padding: 15px;
+    background-color: lightblue;
+}
+
+.estatico textarea {
+    display: block;
+    width: 90%;
+    height: 45px;
+    margin: 10px 0;
+}
+
+.estatico p {
+    margin: 15px 0 0;
+    padding: 10px;
+    background-color: white;
+}
+
+/* EJERCICIO 2: el hijo se mueve respecto a donde estaría normalmente. */
+.contenedor-relativo {
+    min-height: 160px;
+    padding: 15px;
+    background-color: lightyellow;
+}
+
+.hijo-relativo {
+    position: relative;
+    top: 10px;
+    left: 30px;
+    width: 70%;
+    padding: 10px;
+    background-color: orange;
+}
+
+/* EJERCICIO 3: position: relative hace que el padre sea referencia del hijo absolute. */
+.contenedor-absoluto {
+    position: relative;
+    height: 180px;
+    padding: 15px;
+    background-color: lightgreen;
+}
+
+.hijo-absoluto {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 10px;
+    background-color: white;
+}
+
+/* EJERCICIO 4: el aviso queda fijo respecto a la ventana del navegador. */
+.contenido-fijo {
+    min-height: 240px;
+    padding: 15px;
+    background-color: lavender;
+}
+
+.mensaje-fijo {
+    position: fixed;
+    top: 55px;
+    right: 15px;
+    padding: 12px;
+    background-color: darkblue;
+    color: white;
+}
+
+/* EJERCICIO 5: cada columna ocupa algo menos de la mitad para caber en la misma fila. */
+.contenedor-flotante {
+    min-height: 140px;
+    padding: 10px;
+    background-color: lightgray;
+}
+
+.columna {
+    float: left;
+    width: 48%;
+    min-height: 90px;
+    margin-right: 2%;
+    padding: 10px;
+    background-color: white;
+}
+
+/* clear: both evita que el contenido siguiente se coloque junto a las columnas flotantes. */
+.limpiar {
+    clear: both;
+    padding-top: 10px;
+}
+
+/* EJERCICIO 6: el exceso de contenido se desplaza dentro de este div. */
+.contenido-desplazable {
+    height: 400px;
+    overflow: auto;
+    padding: 15px;
+    background-color: lightcyan;
+}
+
+/* EJERCICIO 7: el padre relative sirve de referencia para el pie absolute. */
+.contenedor-combinado {
+    position: relative;
+    width: 700px;
+    max-width: 100%;
+    height: 300px;
+    padding: 15px;
+    background-color: lightsteelblue;
+}
+
+/* El encabezado se fija arriba de la ventana al desplazarse por la página. */
+.encabezado-fijo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: navy;
+    color: white;
+    text-align: center;
+}
+
+/* float: left alinea el menú a la izquierda del contenedor. */
+.menu-flotante {
+    float: left;
+    width: 150px;
+    min-height: 120px;
+    padding: 10px;
+    background-color: lightyellow;
+}
+
+/* El contenido se desplaza ligeramente desde su posición normal. */
+.contenido-relativo {
+    position: relative;
+    top: 10px;
+    left: 15px;
+    margin-left: 170px;
+    padding: 15px;
+    background-color: white;
+}
+
+/* El pie se sitúa abajo dentro del contenedor relative, no abajo de la ventana. */
+.pie-absoluto {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    background-color: steelblue;
+    color: white;
+    text-align: center;
+}

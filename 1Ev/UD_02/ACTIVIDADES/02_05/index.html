@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 02_05 - Posicionamiento CSS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- EJERCICIO 1: los elementos aparecen en su orden normal, sin usar position. -->
+    <section>
+        <h2>Ejercicio 1: Posicionamiento estático</h2>
+        <!-- Este div tiene fondo y tamaño definidos en CSS; sus elementos siguen el flujo normal. -->
+        <div class="estatico">
+            <textarea id="texto-1" aria-label="Primera caja de texto">CAJA DE TEXTO 1</textarea>
+            <textarea id="texto-2" aria-label="Segunda caja de texto">CAJA DE TEXTO 2</textarea>
+            <p>Este párrafo aparece después de las cajas siguiendo el flujo normal del HTML.</p>
+        </div>
+    </section>
+
+    <!-- EJERCICIO 2: el div interior se desplaza desde su posición original. -->
+    <section>
+        <h2>Ejercicio 2: Posicionamiento relativo</h2>
+        <!-- El div exterior da tamaño y color al contenedor principal. -->
+        <div class="contenedor-relativo">
+            Primer div (contenedor principal)
+            <!-- position: relative y top/left se aplican a este div en CSS. -->
+            <div class="hijo-relativo">Segundo div, desplazado de su posición original</div>
+        </div>
+    </section>
+
+    <!-- EJERCICIO 3: el elemento absolute se coloca respecto a su padre relative. -->
+    <section>
+        <h2>Ejercicio 3: Posicionamiento absoluto</h2>
+        <!-- Este padre establece el origen para posicionar el div interior. -->
+        <div class="contenedor-absoluto">
+            Contenedor con position: relative
+            <!-- top y right sitúan este div dentro del contenedor padre. -->
+            <div class="hijo-absoluto">Div con position: absolute</div>
+        </div>
+    </section>
+
+    <!-- EJERCICIO 4: el mensaje fijo se mantiene en la ventana al hacer scroll. -->
+    <section>
+        <h2>Ejercicio 4: Posicionamiento fijo</h2>
+        <div class="contenido-fijo">
+            <p>Párrafo 1: contenido de la sección.</p>
+            <p>Párrafo 2: el mensaje no se mueve con estos párrafos.</p>
+            <p>Párrafo 3: desplázate por la página para comprobarlo.</p>
+            <p>Párrafo 4: el aviso se queda en la esquina superior derecha.</p>
+            <p>Párrafo 5: su posición depende de la ventana del navegador.</p>
+        </div>
+        <!-- position: fixed mantiene este mensaje en la misma posición de la pantalla. -->
+        <div class="mensaje-fijo">MENSAJE FIJO</div>
+    </section>
+
+    <!-- EJERCICIO 5: las dos columnas flotan a la izquierda y el siguiente bloque las limpia. -->
+    <section>
+        <h2>Ejercicio 5: Posicionamiento flotante</h2>
+        <div class="contenedor-flotante">
+            <!-- Cada div es una columna colocada horizontalmente con float: left. -->
+            <div class="columna">Columna izquierda. El texto ocupa esta primera columna.</div>
+            <div class="columna">Columna derecha. El texto ocupa esta segunda columna.</div>
+            <!-- clear: both hace que este contenido empiece debajo de las dos columnas. -->
+            <div class="limpiar">Contenido posterior a las columnas.</div>
+        </div>
+    </section>
+
+    <!-- EJERCICIO 6: el contenido que supera los 400px se recorre dentro del div. -->
+    <section>
+        <h2>Ejercicio 6: Visualización en el navegador</h2>
+        <!-- La altura y overflow: auto crean una zona con desplazamiento propio. -->
+        <div class="contenido-desplazable" tabindex="0">
+            <p>Este contenedor tiene una altura fija de 400px y permite desplazarse por su contenido.</p>
+            <p>Al haber más contenido del que cabe en el área visible, aparece una barra de desplazamiento.</p>
+            <p>Desplázate dentro de este cuadro para leer el resto del contenido.</p>
+            <p>El scroll de esta zona no cambia la posición de los párrafos que están fuera del contenedor.</p>
+            <p>El contenido continúa por debajo del límite visible para que puedas probar el desplazamiento vertical.</p>
+            <p>Usa la rueda del ratón o la barra que aparece en el lateral para recorrer el texto.</p>
+            <p>El contenedor mantiene su altura aunque haya más texto del que cabe en su interior.</p>
+            <p>Al llegar al final, habrás recorrido todo el contenido sin desplazar esta caja de su sitio.</p>
+            <p>Este último párrafo permite comprobar que se puede llegar hasta el final del contenido.</p>
+        </div>
+    </section>
+
+    <!-- EJERCICIO 7: se combinan position: fixed, float, relative y absolute. -->
+    <section>
+        <h2>Ejercicio 7: Combinación de posicionamientos</h2>
+        <!-- Este div es el padre relative y tiene dimensiones fijas para el ejemplo. -->
+        <div class="contenedor-combinado">
+            <!-- El encabezado fijo se coloca respecto a la ventana, no al contenedor. -->
+            <header class="encabezado-fijo">Encabezado con position: fixed</header>
+            <!-- El menú flota a la izquierda del contenedor. -->
+            <nav class="menu-flotante">Menú de navegación</nav>
+            <!-- El contenido usa relative para ajustarse desde su lugar en el flujo. -->
+            <div class="contenido-relativo">Contenido central con position: relative</div>
+            <!-- El pie absolute se coloca al fondo del contenedor relative. -->
+            <footer class="pie-absoluto">Pie con position: absolute</footer>
+        </div>
+    </section>
+</body>
+</html>
