@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 640" role="img" aria-labelledby="titulo">
+  <title id="titulo">Hogaza de pan artesanal sobre una mesa</title>
+  <rect width="960" height="640" fill="#efe2c8"/>
+  <circle cx="744" cy="147" r="220" fill="#f7edda"/>
+  <path d="M0 465c170-53 275-19 427 4s310 42 533-27v198H0z" fill="#d9c7a6"/>
+  <ellipse cx="474" cy="435" rx="295" ry="78" fill="#bba682" opacity=".38"/>
+  <path d="M225 402c-6-143 77-245 236-263 156-18 280 72 286 214 6 143-112 211-272 211-150 0-244-55-250-162z" fill="#bc7338"/>
+  <path d="M241 381c6-127 85-205 218-220 137-16 247 58 263 176-54-67-104-100-171-100-91 0-119 63-185 69-46 4-77 25-125 75z" fill="#d8954e"/>
+  <path d="M316 293c39-51 88-83 146-91M419 355c42-48 91-75 151-78M524 409c42-32 89-50 142-51" fill="none" stroke="#f4d28f" stroke-linecap="round" stroke-width="24"/>
+  <path d="M342 278c17-17 35-30 55-39M456 337c21-19 45-32 69-39M561 391c18-12 38-20 59-24" fill="none" stroke="#f8e4b7" stroke-linecap="round" stroke-width="8"/>
+  <path d="M132 526c82 17 158 18 230 3" fill="none" stroke="#927c58" stroke-linecap="round" stroke-width="5" opacity=".4"/>
+  <circle cx="771" cy="424" r="8" fill="#71805a"/>
+  <circle cx="803" cy="399" r="5" fill="#71805a"/>
+</svg>

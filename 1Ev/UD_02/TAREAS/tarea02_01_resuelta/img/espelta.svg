@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 640" role="img" aria-labelledby="titulo">
+  <title id="titulo">Barra de espelta recién horneada</title>
+  <rect width="960" height="640" fill="#e9e9d7"/>
+  <circle cx="780" cy="145" r="180" fill="#f5f2e3"/>
+  <path d="M0 465c167-45 281-14 451 12s327 32 509-20v183H0z" fill="#d4d4b8"/>
+  <ellipse cx="484" cy="425" rx="330" ry="65" fill="#9d9879" opacity=".32"/>
+  <g transform="rotate(-13 475 343)">
+    <path d="M188 343c0-67 58-112 145-112h286c97 0 154 44 154 110s-57 111-154 111H333c-87 0-145-43-145-109z" fill="#ae6b37"/>
+    <path d="M204 326c13-55 59-84 131-84h275c70 0 119 27 143 73-58-34-96-19-146 2-49 21-88 12-128-7-55-25-91 30-157 35-47 4-79-13-118-19z" fill="#d7974d"/>
+    <path d="M358 278l46 47M469 273l42 48M579 272l40 47" fill="none" stroke="#f5d69c" stroke-linecap="round" stroke-width="17"/>
+  </g>
+  <path d="M158 523c94 12 169 10 238-10" fill="none" stroke="#8e896c" stroke-linecap="round" stroke-width="5" opacity=".45"/>
+  <path d="M749 460c34-52 59-91 77-137M772 435c-21-19-38-34-59-44M793 407c23-9 42-19 58-37M807 381c-16-16-27-33-36-54M828 359c17-7 32-19 46-35" fill="none" stroke="#71805a" stroke-linecap="round" stroke-width="8"/>
+  <path d="M790 407c-6-14-10-28-11-43M818 377c5-14 7-29 5-44M770 431c-14-9-27-16-42-21" fill="none" stroke="#9aa47b" stroke-linecap="round" stroke-width="5"/>
+</svg>

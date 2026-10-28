@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Guía de estilo visual del proyecto PanVeloz.">
+  <title>Guía de estilo | PanVeloz</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body class="guia">
+  <header class="guia__cabecera">
+    <div class="contenedor">
+      <p class="etiqueta">PanVeloz · Identidad visual</p>
+      <h1>Guía de estilo</h1>
+      <p>Una referencia breve para que cada página de PanVeloz conserve el mismo aire: cercano, claro y ligado a lo artesanal.</p>
+      <a class="boton boton--secundario" href="index.html">Volver a la página</a>
+    </div>
+  </header>
+
+  <main class="contenedor guia__contenido">
+    <section class="guia__seccion" aria-labelledby="paleta">
+      <h2 id="paleta">Colores de la marca</h2>
+      <div class="muestras-color">
+        <div class="muestra-color">
+          <div class="muestra-color__tono tono--bosque"></div>
+          <div class="muestra-color__datos"><strong>Bosque</strong><span>#294B3F · color principal</span></div>
+        </div>
+        <div class="muestra-color">
+          <div class="muestra-color__tono tono--bosque-oscuro"></div>
+          <div class="muestra-color__datos"><strong>Bosque oscuro</strong><span>#1D382F · títulos y pie</span></div>
+        </div>
+        <div class="muestra-color">
+          <div class="muestra-color__tono tono--hoja"></div>
+          <div class="muestra-color__datos"><strong>Hoja</strong><span>#71805A · detalles naturales</span></div>
+        </div>
+        <div class="muestra-color">
+          <div class="muestra-color__tono tono--trigo"></div>
+          <div class="muestra-color__datos"><strong>Trigo</strong><span>#E8C783 · acentos cálidos</span></div>
+        </div>
+        <div class="muestra-color">
+          <div class="muestra-color__tono tono--tostado"></div>
+          <div class="muestra-color__datos"><strong>Tostado</strong><span>#C87850 · llamadas de atención</span></div>
+        </div>
+        <div class="muestra-color">
+          <div class="muestra-color__tono tono--crema"></div>
+          <div class="muestra-color__datos"><strong>Crema</strong><span>#FBF8F0 · fondos suaves</span></div>
+        </div>
+        <div class="muestra-color">
+          <div class="muestra-color__tono tono--papel"></div>
+          <div class="muestra-color__datos"><strong>Papel</strong><span>#FFFDF8 · superficie de tarjetas</span></div>
+        </div>
+        <div class="muestra-color">
+          <div class="muestra-color__tono tono--tinta"></div>
+          <div class="muestra-color__datos"><strong>Tinta</strong><span>#29342E · texto principal</span></div>
+        </div>
+        <div class="muestra-color">
+          <div class="muestra-color__tono tono--suave"></div>
+          <div class="muestra-color__datos"><strong>Suave</strong><span>#69736B · texto secundario</span></div>
+        </div>
+        <div class="muestra-color">
+          <div class="muestra-color__tono tono--borde"></div>
+          <div class="muestra-color__datos"><strong>Borde</strong><span>#E7E1D4 · separadores</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="guia__seccion" aria-labelledby="tipografia">
+      <h2 id="tipografia">Tipografía</h2>
+      <div class="tipografias">
+        <div class="tipografia tipografia--titulos">
+          <p class="tipografia__nombre">Títulos · Georgia, serif</p>
+          <h3>Pan hecho con tiempo</h3>
+          <p>Una voz cálida para los mensajes que queremos recordar.</p>
+        </div>
+        <div class="tipografia">
+          <p class="tipografia__nombre">Texto y navegación · Arial, sans-serif</p>
+          <h3>Claro y fácil de leer</h3>
+          <p>Usamos una tipografía sencilla en párrafos, precios y botones.</p>
+        </div>
+      </div>
+      <p>El tamaño base del texto es 1 rem. Los títulos se adaptan al ancho de pantalla y mantienen un interlineado compacto.</p>
+    </section>
+
+    <section class="guia__seccion" aria-labelledby="componentes">
+      <h2 id="componentes">Clases y componentes</h2>
+      <div class="ejemplos-componentes">
+        <article class="ejemplo">
+          <h3>Botones</h3>
+          <div class="ejemplo__botones">
+            <a class="boton boton--principal" href="index.html#productos">Principal</a>
+            <a class="boton boton--secundario" href="index.html#reparto">Secundario</a>
+          </div>
+          <p>El principal invita a realizar la acción; el secundario sirve para enlaces complementarios. Ambos cambian al pasar el ratón.</p>
+        </article>
+
+        <article class="ejemplo">
+          <h3>Tarjeta de producto</h3>
+          <div class="tarjeta">
+            <img class="tarjeta__imagen" src="img/hogaza.svg" alt="Ejemplo de una hogaza artesanal">
+            <div class="tarjeta__contenido">
+              <p class="tarjeta__tipo">Masa madre · 800 g</p>
+              <h3>La hogaza de casa</h3>
+              <p>Imagen, descripción y acción quedan agrupadas en un mismo bloque.</p>
+              <div class="tarjeta__pie">
+                <span class="precio">4,20 €</span>
+                <a class="boton boton--secundario boton--pequeno" href="index.html#productos">Ver más</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="ejemplo">
+          <h3>Mensaje destacado</h3>
+          <aside class="destacado">
+            <p class="etiqueta">Promoción</p>
+            <h2>El primer reparto es gratis.</h2>
+          </aside>
+          <p>La clase <code>.destacado</code> da visibilidad a promociones y avisos sin apartarse de la paleta.</p>
+        </article>
+
+        <article class="ejemplo">
+          <h3>Uso de las clases</h3>
+          <p><code>.boton--principal</code> y <code>.boton--secundario</code> definen las dos variantes de botón. La clase <code>.tarjeta</code> agrupa el contenido de cada producto y <code>.destacado</code> separa los mensajes importantes.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor pie__interior">
+      <a class="marca marca--pie" href="index.html">
+        <span class="marca__icono" aria-hidden="true">PV</span>
+        <span>Pan<span class="marca__acento">Veloz</span></span>
+      </a>
+      <p>Pan de aquí, llevado con cariño.</p>
+      <a href="index.html">Volver al inicio</a>
+      <small>&copy; 2026 PanVeloz</small>
+    </div>
+  </footer>
+</body>
+</html>
